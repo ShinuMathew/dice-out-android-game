@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wood_bg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/die3Image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/rollButton"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/die_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <ImageView
+        android:id="@+id/die1Image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/rollButton"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/die_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111" />
+
+
+    <ImageView
+        android:id="@+id/die2Image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/rollButton"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/die_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <TextView
+        android:id="@+id/rollResult"
+        android:layout_width="365dp"
+        android:layout_height="181dp"
+        android:justificationMode="none"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#202020"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.341" />
+
+    <TextView
+        android:id="@+id/congratText"
+        android:layout_width="359dp"
+        android:layout_height="196dp"
+        android:textAlignment="center"
+        android:textColor="#E7F3E8"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.653" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/rollButton"
+        android:layout_width="130dp"
+        android:layout_height="96dp"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:padding="10dp"
+        app:backgroundTint="#498DDF"
+        app:fabCustomSize="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.925"
+        app:maxImageSize="75dp"
+        app:srcCompat="@drawable/dice_100px" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/refreshButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:backgroundTint="#8DEA91"
+        app:fabCustomSize="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.922"
+        app:maxImageSize="75dp"
+        app:srcCompat="@android:drawable/ic_popup_sync" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
